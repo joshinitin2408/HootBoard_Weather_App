@@ -1,0 +1,153 @@
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: cornflowerblue;
+}
+
+.dashboard-box {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: aliceblue;
+  width: 25vw;
+}
+
+.app-title {
+  text-align: left;
+  color: cornflowerblue;
+}
+
+.app-divider {
+  border: none;
+  border-top: 1px solid #212529;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  width: 25vw;
+  position: relative;
+  right: 16px;
+}
+
+.location-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.or-line {
+  position: relative;
+  margin-top: 10px;
+  border: none;
+  border-top: 1px solid rgb(0 0 0 / 23%);
+}
+
+.or-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: aliceblue;
+  padding: 0 10px;
+  color: #6c757d87;
+}
+
+.location-button {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.temperature {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 60px;
+}
+
+.weather-condition {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #666;
+  font-weight: bold;
+}
+
+.location {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #444;
+}
+
+.max-temp-humidity {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.max-temp {
+  margin: 0;
+  padding: 5px;
+  font-weight: bold;
+  color: #333;
+  font-size: large;
+}
+
+.icon-container {
+  position: relative;
+  bottom: 4px;
+}
+
+.bi-arrow-left-short:hover {
+  cursor: pointer;
+}
+
+.subrow {
+  width: 40%;
+}
+
+.vertical-line {
+  border-right: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+  .dashboard-box {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: aliceblue;
+    width: 78vw;
+  }
+
+  .app-divider {
+    border: none;
+    border-top: 1px solid #212529;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 78vw;
+    position: relative;
+    right: 16px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .dashboard-box {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: aliceblue;
+    width: 70vw;
+  }
+  .app-divider {
+    border: none;
+    border-top: 1px solid #212529;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 70vw;
+    position: relative;
+    right: 16px;
+}
+}

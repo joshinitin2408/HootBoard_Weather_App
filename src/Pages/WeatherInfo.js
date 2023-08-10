@@ -103,7 +103,7 @@ const WeatherInfo = () => {
                                     <i className="bi bi-arrow-left-short" onClick={() => { window.location.href = "/" }}></i> Weather App
                                 </h4>
                                 <hr className="app-divider" />
-                                <Row className="weather-icon"></Row>
+                                <Row className="weather-icon">{weatherIcons["sunny"]}</Row>
                                 <p style={{'fontWeight': 'bold'}}>Please Go back and Enter correct details</p>
                                 <p className="location"><i class="bi bi-geo-alt"></i> Not Found</p>
                                 <hr className="app-divider" />

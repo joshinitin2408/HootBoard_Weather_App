@@ -24,10 +24,10 @@ The Weather App is a user-friendly web application that provides users with up-t
 ## Installation
 
 1. Clone the repository:
--  git clone https://github.com/your-username/weather-app.git
+-  git clone https://github.com/joshinitin2408/HootBoard_Weather_App.git
 
 2. Navigate to the project directory:
--  cd weather-app
+-  cd HootBoard_Weather_App-main
 
 3. Install dependencies:
 -  npm install

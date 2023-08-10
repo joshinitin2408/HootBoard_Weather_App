@@ -27,7 +27,7 @@ The Weather App is a user-friendly web application that provides users with up-t
 -  git clone https://github.com/joshinitin2408/HootBoard_Weather_App.git
 
 2. Navigate to the project directory:
--  cd HootBoard_Weather_App-main
+-  cd HootBoard_Weather_App
 
 3. Install dependencies:
 -  npm install

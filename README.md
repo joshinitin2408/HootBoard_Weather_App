@@ -42,7 +42,7 @@ The Weather App is a user-friendly web application that provides users with up-t
 
 3. Enter a city name in the input field and "press enter" or click the "Get Device Location" button to see    weather information.
 
-4. You can also go to https://hoot-board-weather-app.vercel.app/
+4. You can also go to https://hootboardweatherapp.vercel.app/
 
 ## Technologies Used
 

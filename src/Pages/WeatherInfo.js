@@ -12,6 +12,7 @@ import {
     WiDayHaze,
     WiWindy,
     WiCloudRefresh,
+    WiRefresh,
 } from 'react-icons/wi';
 import './Dashboard.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -70,8 +71,10 @@ const WeatherInfo = () => {
     };
 
     const weatherIcons = {
+        Error: <WiRefresh size={64} color="#ffaa00" />,
         sunny: <WiDaySunny size={64} color="#ffaa00" />,
-        scatteredCloud: <WiCloudRefresh size={64} color="#aaaaaa" />,
+        clearsky: <WiDaySunny size={64} color="#ffaa00" />,
+        scatteredCloud: <WiDayHaze size={64} color="#aaaaaa" />,
         brokenclouds: <WiCloudRefresh size={64} color="#aaaaaa" />,
         overcastClouds: <WiCloudy size={64} color="#888888" />,
         cloudy: <WiCloudy size={64} color="#888888" />,
@@ -83,6 +86,7 @@ const WeatherInfo = () => {
         haze: <WiDayHaze size={64} color="#999999" />,
         windy: <WiWindy size={64} color="#777777" />,
         dust: <WiFog size={64} color="#777777" />,
+
     };
     const weatherCondition = Object.keys(weatherIcons).find(key => {
         const lowercaseKey = key.toLowerCase();
@@ -103,8 +107,8 @@ const WeatherInfo = () => {
                                     <i className="bi bi-arrow-left-short" onClick={() => { window.location.href = "/" }}></i> Weather App
                                 </h4>
                                 <hr className="app-divider" />
-                                <Row className="weather-icon">{weatherIcons["sunny"]}</Row>
-                                <p style={{'fontWeight': 'bold'}}>Please Go back and Enter correct details</p>
+                                <Row className="weather-icon">{weatherIcons["Error"]}</Row>
+                                <p style={{ 'fontWeight': 'bold' }}>Please Go back and Enter correct details</p>
                                 <p className="location"><i class="bi bi-geo-alt"></i> Not Found</p>
                                 <hr className="app-divider" />
                                 <Row className="max-temp-humidity">
